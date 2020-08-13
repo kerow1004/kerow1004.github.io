@@ -75,6 +75,11 @@ post_class: post-template
                 {% endif %}
                 <!-- End Toc -->
                 {{content}}
+                <script type="text/x-mathjax-config">
+                MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+                </script>
+                <script type="text/javascript" src="http://cdn.mathjax.org/math...">
+                </script>
             </div>
 
             <!-- Rating -->
