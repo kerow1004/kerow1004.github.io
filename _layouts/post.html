@@ -28,7 +28,7 @@ post_class: post-template
                         {% if author.avatar %}
                         <img class="author-thumb" src="{{site.baseurl}}/{{ author.avatar }}" alt="{{ author.display_name }}">
                         {% else %}
-                        <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                        <img class="author-thumb" src="/assets/images/me.jpeg" alt="{{ author.display_name }}">
                         {% endif %}
                     </div>
                     <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
@@ -75,11 +75,7 @@ post_class: post-template
                 {% endif %}
                 <!-- End Toc -->
                 {{content}}
-                <script type="text/x-mathjax-config">
-                MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-                </script>
-                <script type="text/javascript" src="http://cdn.mathjax.org/math...">
-                </script>
+
             </div>
 
             <!-- Rating -->
@@ -139,7 +135,13 @@ post_class: post-template
 
         </div>
         <!-- End Post -->
-
+        <article>
+            <script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+                    </script>
+            <script type="text/javascript" src="http://cdn.mathjax.org/math...">
+            </script>
+        </article>
     </div>
 </div>
 <!-- End Article

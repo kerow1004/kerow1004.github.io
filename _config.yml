@@ -3,7 +3,7 @@ name: "Fulgur"
 title: "Fulgur's Blog"
 description: "Mathematics, Program, Education for developer."
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+favicon: 'assets/images/logo_icon.png'
 baseurl: ''
 google_analytics: 'UA-112764662-2'
 disqus: 'Fulgur'
@@ -16,11 +16,11 @@ authors:
   jin:
     name: Jin
     display_name: Jin
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    gravatar: "/assets/images/me.jpeg"
     email: kerow1004@gmail.com
     web:
     twitter:
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+    description: "수학과 프로그램을 사랑하는 개발자이고, 항상 주어진 문제를 다른 시각으로 해결하기 위해서 노력하고 공부합니다."
 
 # Plugins
 plugins:
