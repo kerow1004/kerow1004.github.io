@@ -5,9 +5,116 @@
     <description>Mathematics, Program, Education for developer.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Aug 2020 10:45:34 +0900</pubDate>
-    <lastBuildDate>Tue, 18 Aug 2020 10:45:34 +0900</lastBuildDate>
+    <pubDate>Tue, 18 Aug 2020 11:53:23 +0900</pubDate>
+    <lastBuildDate>Tue, 18 Aug 2020 11:53:23 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>수학 = 공식 ??????</title>
+        <description>&lt;p&gt;수학을 흔히 계산의 도구로만 생각하는 경향들이 있습니다.&lt;/p&gt;
+
+&lt;p&gt;그래서 수학을 떠올리면 산수를 떠올리고 많은 사람들이 수학을 통해 무언가 계산을 해야 한다는 생각을 먼저 합니다.&lt;/p&gt;
+
+&lt;p&gt;수학이라는 학문의 본질은 계산이 아니라고 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;수학은 언어이고 논리적인 표현을 하는 하나의 방식이라고 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;그래서 수학을 표현의 관점에 보는 것은 아주 중요한 관점이라고 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;표현을 한다는 이야기는 소통을 한다는 이야기이고 소통은 언어가 가지고 있는 중요한 기능입니다.&lt;/p&gt;
+
+&lt;p&gt;그래서 수학을 공부할 때는 공식이나 계산의 방법 위주로 공부하는 것도 있지만, 수학이라는 학문이 어떠한 방식으로 표현하고 표현의 요소들이 어떻게 함축적인 의미들을 갖는지 이해하는 공부를 한다면 수학의 본질을 이해하는 과정이 될 수 있을 것이라는 생각을 합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;-수학의-핵심은-일반화&quot;&gt;| 수학의 핵심은 일반화&lt;/h2&gt;
+&lt;p&gt;수학 공부를 할 때 접하는 공식이 수학 일반화의 산물입니다.&lt;/p&gt;
+
+&lt;p&gt;수학이라는 학문이 가지고 있는 핵심은 나열적인 표현을 통해 공통의 로직을 찾아내어 하나의 일반적인 형태로 만들어 수식화를 하는 것이라고 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;간단한 좌표를 나열해보겠습니다.&lt;/p&gt;
+
+&lt;p&gt;(1,1), (2,2), (3,3), (4,4), (5,5), (6,6), (7,7), (8,8), (9,9),・・・&lt;/p&gt;
+
+&lt;p&gt;이러한 좌표가 있습니다. 이 부분의 공통적인 로직은 $x$좌표의 값과 $y$좌표의 값이 같다는 것입니다.&lt;/p&gt;
+
+&lt;p&gt;그래서 이 부분을 일반화하여 $y=x$라는 항등함수가 나오는 것입니다.&lt;/p&gt;
+
+&lt;p&gt;저번 글에서도 이야기를 했지만 수학은 나열화, 수식화, 시각화를 통해서 수학을 표현합니다.&lt;/p&gt;
+
+&lt;p&gt;그런데 많은 사람들은 나열화를 건너띄고 수식화만을 배우고 외워서 수학이 나타내고자 하는 본질을 보지 못하는 경우가 많이 있습니다.&lt;/p&gt;
+
+&lt;p&gt;그래서 수학적 공식이 이해가 가지 않을 경우 나열을 해보면 수식이 가지고 있는 특수성을 파악할 수 있을 것입니다.&lt;/p&gt;
+
+&lt;p&gt;그러한 예로 오일러 공식을 가지고 파악을 해보겠습니다.&lt;/p&gt;
+
+&lt;p&gt;수식이 복잡하지만 중요한 것은 세부적인 부분을 보는 것이 아니라 큰 틀에서 보는 것이 중요합니다.&lt;/p&gt;
+
+&lt;p&gt;오일러 공식은 다음과 같습니다.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;e^{ix}=\cos x + i\sin x&lt;/script&gt;
+
+&lt;p&gt;이 공식을 전체로 보는 것이 아니라 나눠서 보겠습니다.&lt;/p&gt;
+
+&lt;p&gt;$e^{ix}$, $\cos x$,  $i\sin x$&lt;/p&gt;
+
+&lt;p&gt;각각의 항을 테일러급수를 이용하면 다음과 같이 정리할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/math3-1.png&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;빨간 네모 안을 주목하면 지수함수와 삼각함수를 나열화한 것입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/math3-2.png&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;빨간 네모 부분은 $\cos x$이고 파란 네모 부분은 $\sin x$입니다. 이렇게 판단할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;오일러 공식을 통해서 알려드리고 싶은 부분은 공식의 형태가 나열화 되어 있는 부분의 집합들이라는 것을 알려드리고 싶은 것입니다.&lt;/p&gt;
+
+&lt;p&gt;결국, 공식은 여러 가지 수학적 과정의 일반화된 묶음의 연산 관계로 표현하는 것이라서 수학적인 이해를 할 때 공식의 세세한 부분을 보는 것이 아니라 일정한 블록의 형태를 보면 공식의 의미를 이해할 수 있게 될 수 있다고 생각합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;-수학도-상황에-따라-표현이-다르다&quot;&gt;| 수학도 상황에 따라 표현이 다르다&lt;/h2&gt;
+&lt;p&gt;언어는 다른 단어들이 상황에 따라 같은 의미로 쓰이는 경우가 많이 있습니다.&lt;/p&gt;
+
+&lt;p&gt;예를 들어 식사, 수라, 진지, 밥 등 같은 의미의 단어들이 상황에 따라서 쓰임이 다릅니다.&lt;/p&gt;
+
+&lt;p&gt;수학 또한 같은 표현이라도 조건이 달라지거나 상황이 바뀌면 사용되는 의미가 달라지거나 다른 표현이라도 같은 의미를 갖는 수학적 공식이 있습니다.&lt;/p&gt;
+
+&lt;p&gt;이러한 수학의 표현을 잘 이해하기 위해서는 수식의 세세한 부분을 이해하려고 하면 막히는 부분이 생길 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;그래서 수식을 형태 형태 별로 해석하는 것이 중요합니다. 간단한 수식은 이런 형태들이 파악되기 쉽게 표현되어 있는 반면, 복잡한 수식은 수식이 정리되어 있거나 다른 형태에 포함되어 있어서 파악하기가 쉽지 않을 수도 있습니다. 그러나 수학적인 형태가 익숙해지면 수식에 빠진 부분이 있어도 해석을 할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;하나의 예를 들어 보겠습니다.&lt;/p&gt;
+
+&lt;p&gt;가장 잘 알만한 피타고라스 정리는&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a^2+b^2=c^2&lt;/script&gt;
+
+&lt;p&gt;입니다.&lt;/p&gt;
+
+&lt;p&gt;이 피타고라스의 정리는 도형에서 직각삼각형일 때 관계가 성립하는 공식입니다. 그리고 각각의 문자는 밑변, 높이, 빗변의 관계입니다.&lt;/p&gt;
+
+&lt;p&gt;그리고 원의 방정식을 보면&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x^2+y^2=r^2&lt;/script&gt;
+
+&lt;p&gt;입니다.&lt;/p&gt;
+
+&lt;p&gt;이 원의 방정식은 좌표상의 $x$, $y$와 반지름의 $r$ 관계가 성립하는 공식이고 말로 표현하면 원의 중심으로 같은 거리에 있는 점들의 집합입니다.&lt;/p&gt;
+
+&lt;p&gt;이렇게 두 공식은 같은 구조를 가지고 있는 같은 공식입니다.&lt;/p&gt;
+
+&lt;p&gt;하지만 주어지는 상황이 달라서 이름이 다르게 쓰이는 것입니다.&lt;/p&gt;
+
+&lt;p&gt;수학에는 이런한 상황이 많이 적용되는 편입니다.&lt;/p&gt;
+
+&lt;p&gt;수학을 공부할 때 이런 관계를 파악할 수 있다면 조금 재미있게 수학을 공부할 수 있다고 생각합니다.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 18 Aug 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/math-blog-3/</link>
+        <guid isPermaLink="true">http://localhost:4000/math-blog-3/</guid>
+        
+        
+        <category>Remind Math</category>
+        
+      </item>
     
       <item>
         <title>수학 = 공식 ??????</title>
@@ -27,7 +134,7 @@
 
 &lt;p&gt;그래서 공식이 가지고 있는 의미와 해석에 대해서 이야기하려고 합니다.&lt;/p&gt;
 
-&lt;h2 id=&quot;수학공식은-간단한-공식을-이해할-수-있으면-복잡한-수학의-공식을-이해할-수-있다&quot;&gt;수학공식은 간단한 공식을 이해할 수 있으면 복잡한 수학의 공식을 이해할 수 있다.&lt;/h2&gt;
+&lt;h2 id=&quot;-수학공식은-간단한-공식을-이해할-수-있으면-복잡한-수학의-공식을-이해할-수-있다&quot;&gt;| 수학공식은 간단한 공식을 이해할 수 있으면 복잡한 수학의 공식을 이해할 수 있다.&lt;/h2&gt;
 
 &lt;p&gt;가장 기본적인 공식을 이해하고 있으면 복잡한 형태의 공식을 쉽게 이해할 수 있고 공식을 블록단위로 해석을 하게 되어 외우기도 편하고 접근이 쉬워질 수 있습니다.&lt;/p&gt;
 
@@ -89,7 +196,7 @@
         <guid isPermaLink="true">http://localhost:4000/math-blog-2/</guid>
         
         
-        <category>Math</category>
+        <category>Remind Math</category>
         
       </item>
     
@@ -209,7 +316,7 @@
         <guid isPermaLink="true">http://localhost:4000/math-blog-1/</guid>
         
         
-        <category>Math</category>
+        <category>Remind Math</category>
         
       </item>
     
