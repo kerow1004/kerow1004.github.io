@@ -5,9 +5,86 @@
     <description>Mathematics, Program, Education for developer.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Aug 2020 15:07:10 +0900</pubDate>
-    <lastBuildDate>Tue, 18 Aug 2020 15:07:10 +0900</lastBuildDate>
+    <pubDate>Wed, 19 Aug 2020 13:33:17 +0900</pubDate>
+    <lastBuildDate>Wed, 19 Aug 2020 13:33:17 +0900</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>함수란</title>
+        <description>&lt;p&gt;프로그래머들에게 있어서 함수라는 개념은 아주 중요하다고 할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;모든 프로그램언어들이 함수의 구조로 이루어져 있고 이를 연결하고 논리적으로 구조화하는 것이 프로그램이라고 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;그래서 공식보다 중요한 것이 함수의 기본적인 개념이고 함수가 어디에 사용이 되며 어떻게 활용할 수 있는지에 대해서 중점적으로 이야기 해볼 생각입니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;-함수는-추론-할-수-있어야-한다&quot;&gt;| 함수는 추론 할 수 있어야 한다&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;수학에서, 함수(函數, 영어: function) 또는 사상(寫像, 영어: map)은 첫 번째 집합의 임의의 한 원소를 두 번째 집합의 오직 한 원소에 대응시키는 대응 관계이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;위의 정의는 위키피디아에 나와 있는 함수의 정의입니다.&lt;/p&gt;
+
+&lt;p&gt;뭔지 모르게 어렵게 함수를 정의 했다고 생각합니다. 조금 쉽게 풀어서 이야기하면 하나의 값은 오직 하나의 값을 갖는다는 이야기입니다.&lt;/p&gt;
+
+&lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;/assets/images/math6-1.png&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;그래서 함수란 어떤 값을 연산했을 때 특별한 조건없이 어떤 값이 나올지 알 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;예를 들면, 빵 만드는 기계에 밀가루를 넣으면 빵이 나온다는 것을 우리는 예측할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;만약에 어떤한 기계에 밀가루를 넣었을 때 나오는 결과가 빵이 나올지 국수가 나올지 모른다면 이는 함수라고 할 수 없습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/math6-2.png&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;프로그램도 같습니다. 어떠한 함수의 결과가 int 일지 string일지 알 수 없다면 그 함수는 사용을 할 수 없을 것입니다.&lt;/p&gt;
+
+&lt;p&gt;이렇게 함수는 어떠한 입력값에 의해서 나오는 결과값을 예측할 수 있어야 하고 예측을 할 수 있을 때 우리는 함수라고 합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;-그럼-예측-할-수-없는-함수는&quot;&gt;| 그럼 예측 할 수 없는 함수는?&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/math6-3.png&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;$y=x$는 함수입니다. 하나의 $x$값에 대해서 하나의 $y$값을 갖는 반면 왼쪽의 원은 하나의 $x$값에 대해서 두개의 $y$값을 갖습니다.&lt;/p&gt;
+
+&lt;p&gt;그래서 원을 우리는 함수라고 하지 않고 원의 방정식이라고 합니다.&lt;/p&gt;
+
+&lt;p&gt;이렇게 하나의 값에 대해서 두개 이상의 값을 갖는 형태를 도형의 방정식이라고 합니다.&lt;/p&gt;
+
+&lt;p&gt;이처럼 좌표에 시각적으로 표현할 수 있는 수학적인 영역이 함수와 도형입니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;-치환의-중요성&quot;&gt;| 치환의 중요성&lt;/h2&gt;
+&lt;p&gt;수학에 있어서 치환이라는 개념은 수학적인 표현의 간결성을 만들어주는 아주 중요한 부분입니다.&lt;/p&gt;
+
+&lt;p&gt;프로그램도 객체라는 개념이 치환이라는 개념과 거의 동일한 의미를 가지고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;객체지향프로그램(OOP)을 간단하게 이야기 하자면 프로그램을 작성할 때 반복되는 부분을 하나의 객체화하여 재사용성을 높이는 방법이라고 할 수 있겠습니다.&lt;/p&gt;
+
+&lt;p&gt;수학에서 치환이란 객체지향과 비슷한 방법입니다. 반복되어 사용하는 수학적인 형태를 하나의 문자로 변환하여 수식의 차원이나 형태를 변형하여 간단하게 만들 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;$x^4+3x^2-2=0$
+$t=x^2$로 치환하면
+$t^2+3t-2=0$&lt;/p&gt;
+
+&lt;p&gt;이렇게 4차원의 방정식을 2차원의 방정식으로 바꿔서 판단을 할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;연산을 하는데 있어서 반복되는 형태를 묶어주면 손쉬게 연산을 할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;$(a+b+c)(a+b-c)$ 라는 곱셈공식이 있을 때 $a+b=A$라고 치환을 하면&lt;/p&gt;
+
+&lt;p&gt;$(A+c)(A-c)$의 합차공식으로 변형할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;또한 핵심적으로 사용하는 부분은 치환적분법입니다. 적분의 계산을 하는 공식으로 편미분을 이용하여 치환을 이용하는 방법으로 자세한 부분은 나중에 적분법에서 이야기 하겠습니다.&lt;/p&gt;
+
+&lt;p&gt;이러한 치환은 수학적인 해석이나 문제해결의 방법론, 구조적인 부분에서는 중요합니다.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 19 Aug 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/math-blog-6/</link>
+        <guid isPermaLink="true">http://localhost:4000/math-blog-6/</guid>
+        
+        
+        <category>mathematics required for the program</category>
+        
+      </item>
     
       <item>
         <title>수학적인 사고의 방법</title>
@@ -65,12 +142,13 @@
 
 &lt;p&gt;기준은 정하는 사람의 마음입니다. 하지만 수식이 간단하게 만들어질 수 있는 좌표를 잡는 것이 가장 효율적인 좌표를 잡는 것이라고 생각합니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/math5-5math.png&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/math5-5.png&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;그럼 실제로 거리를 어떻게 구할지 생각을 해본다면 공식을 알고 있는 사람은 점과 직선 사이의 거리를 이용하여 쉽게 거리를 구할 수 있을 것입니다.&lt;/p&gt;
 
-&lt;p&gt;직선 $ax+by+c=0$이고 점$(x_0, y_0)$일 때 거리 $d$를 구하면
-&lt;script type=&quot;math/tex&quot;&gt;d={\left\vert ax_0+by_0+c \right\vert \over a^2+b^2}&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;직선 $ax+by+c=0$이고 점$(x_0, y_0)$일 때 거리 $d$를 구하면&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;d={\left\vert ax_0+by_0+c \right\vert \over a^2+b^2}&lt;/script&gt;
 
 &lt;p&gt;하지만 제가 이야기하고 싶은 목적은 수학적인 사고를 어떻게 하는지에 대해서 이야기하는 것이 목적이기 때문에 공식의 이야기는 접어두도록 하겠습니다.&lt;/p&gt;
 
@@ -94,13 +172,13 @@
 
 &lt;p&gt;그럼 다시 처음 주어줬던 그림에서 $x$축과 $y$축을 다음과 같이 정하고 약간 회전을 하면 마지막 그림처럼 표현할 수 있습니다. 그럼 $y$절편과 점의 거리가 되는 것이고 점의 좌표를 알고 있다면  $x$좌표의 거리가 점과 직선 사이의 거리가 되는 것입니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/math5-6math.png&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/math5-6.png&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;이러한 관점에서 수학을 접근할 수 있다면 고정된 방식으로 문제를 해결하는 것이 아니라 문제의 조건을 벗어나지 않는 범위 안에서 조건을 재해석하고 다른 관점을 적용해본다면 수학적인 사고능력이 향상될 수 있을 것이라고 생각합니다.&lt;/p&gt;
 
 &lt;h2 id=&quot;-수학적-사고에-의한-문제-해결의-접근-방법&quot;&gt;| 수학적 사고에 의한 문제 해결의 접근 방법&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/math5-7math.png&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/math5-7.png&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;위의 도형에서 x값을 구하는 문제가 있습니다.&lt;/p&gt;
 
@@ -120,7 +198,7 @@
 
 &lt;p&gt;다시 문제의 질문을 다르게 해석해보겠습니다. x를 삼각형의 변의 길이로 파악할 수 있습니다. 그럼 논리적인 수순으로 삼각형의 닮음비에 대한 논리로 접근할 수 있습니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/math5-8math.png&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/math5-8.png&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;기존의 작은 직각삼각형을 위의 그림과 같이 위치를 바꾸어서 보면 닮음비를 적용하여 간단하게 문제를 해결할 수 있다.&lt;/p&gt;
 
