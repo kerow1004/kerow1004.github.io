@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/logo_icon.png">
+
+<title>함수란 | Fulgur</title>
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>함수란 | Fulgur’s Blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="함수란" />
+<meta name="author" content="jin" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="프로그래머들에게 있어서 함수라는 개념은 아주 중요하다고 할 수 있습니다." />
+<meta property="og:description" content="프로그래머들에게 있어서 함수라는 개념은 아주 중요하다고 할 수 있습니다." />
+<link rel="canonical" href="http://localhost:4000/math-blog-6/" />
+<meta property="og:url" content="http://localhost:4000/math-blog-6/" />
+<meta property="og:site_name" content="Fulgur’s Blog" />
+<meta property="og:image" content="http://localhost:4000/assets/images/math6.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-19T00:00:00+09:00" />
+<script type="application/ld+json">
+{"description":"프로그래머들에게 있어서 함수라는 개념은 아주 중요하다고 할 수 있습니다.","@type":"BlogPosting","headline":"함수란","dateModified":"2020-08-19T00:00:00+09:00","datePublished":"2020-08-19T00:00:00+09:00","image":"http://localhost:4000/assets/images/math6.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/math-blog-6/"},"url":"http://localhost:4000/math-blog-6/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"jin"},"author":{"@type":"Person","name":"jin"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<link href="/assets/css/screen.css" rel="stylesheet">
+
+<link href="/assets/css/main.css" rel="stylesheet">
+
+<script src="/assets/js/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body class="layout-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/logo.png" alt="Fulgur">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/about">It' me</a>
+                </li>
+
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="/portfolio"> Portfolio</a>
+                </li>
+
+<!--                <li class="nav-item">-->
+<!--                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>-->
+<!--                </li>-->
+
+<!--                <li class="nav-item">-->
+<!--                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>-->
+<!--                </li>-->
+
+<!--                <li class="nav-item">-->
+<!--                <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll"><i class="fab fa-github"></i> Fork on Github</a>-->
+<!--                </li>-->
+
+                <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+<div class="mainheading">
+    <h1 class="sitetitle">Fulgur</h1>
+    <p class="lead">
+        Mathematics, Program, Education for developer.
+    </p>
+</div>
+
+<!-- Content
+================================================== -->
+<div class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=함수란&url=http://localhost:4000/math-blog-6/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/math-blog-6/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/math-blog-6/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+
+        </div>
+
+        <!-- Post -->
+        
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                <!-- Author Box -->
+                
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                        
+                        <img class="author-thumb" src="/assets/images/me.jpeg" alt="Jin">
+                        
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <a target="_blank" class="link-dark" href="">Jin</a><a target="_blank" href="" class="btn follow">Follow</a>
+                        <span class="author-description">수학과 프로그램을 사랑하는 개발자이고, 항상 주어진 문제를 다른 시각으로 해결하기 위해서 노력하고 공부합니다.</span>
+                    </div>
+                </div>
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">함수란</h1>
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+
+            
+            <img class="featured-image img-fluid" src="/assets/images/math6.jpg" alt="함수란">
+            
+
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p>프로그래머들에게 있어서 함수라는 개념은 아주 중요하다고 할 수 있습니다.</p>
+
+<p>모든 프로그램언어들이 함수의 구조로 이루어져 있고 이를 연결하고 논리적으로 구조화하는 것이 프로그램이라고 생각합니다.</p>
+
+<p>그래서 공식보다 중요한 것이 함수의 기본적인 개념이고 함수가 어디에 사용이 되며 어떻게 활용할 수 있는지에 대해서 중점적으로 이야기 해볼 생각입니다.</p>
+
+<h2 id="-함수는-추론-할-수-있어야-한다">| 함수는 추론 할 수 있어야 한다</h2>
+<blockquote>
+  <p>수학에서, 함수(函數, 영어: function) 또는 사상(寫像, 영어: map)은 첫 번째 집합의 임의의 한 원소를 두 번째 집합의 오직 한 원소에 대응시키는 대응 관계이다.</p>
+</blockquote>
+
+<p>위의 정의는 위키피디아에 나와 있는 함수의 정의입니다.</p>
+
+<p>뭔지 모르게 어렵게 함수를 정의 했다고 생각합니다. 조금 쉽게 풀어서 이야기하면 하나의 값은 오직 하나의 값을 갖는다는 이야기입니다.</p>
+
+<p class="text-center"><img src="/assets/images/math6-1.png" alt="walking" /></p>
+
+<p>그래서 함수란 어떤 값을 연산했을 때 특별한 조건없이 어떤 값이 나올지 알 수 있습니다.</p>
+
+<p>예를 들면, 빵 만드는 기계에 밀가루를 넣으면 빵이 나온다는 것을 우리는 예측할 수 있습니다.</p>
+
+<p>만약에 어떤한 기계에 밀가루를 넣었을 때 나오는 결과가 빵이 나올지 국수가 나올지 모른다면 이는 함수라고 할 수 없습니다.</p>
+
+<p><img src="/assets/images/math6-2.png" alt="walking" /></p>
+
+<p>프로그램도 같습니다. 어떠한 함수의 결과가 int 일지 string일지 알 수 없다면 그 함수는 사용을 할 수 없을 것입니다.</p>
+
+<p>이렇게 함수는 어떠한 입력값에 의해서 나오는 결과값을 예측할 수 있어야 하고 예측을 할 수 있을 때 우리는 함수라고 합니다.</p>
+
+<h2 id="-그럼-예측-할-수-없는-함수는">| 그럼 예측 할 수 없는 함수는?</h2>
+
+<p><img src="/assets/images/math6-3.png" alt="walking" /></p>
+
+<p>$y=x$는 함수입니다. 하나의 $x$값에 대해서 하나의 $y$값을 갖는 반면 왼쪽의 원은 하나의 $x$값에 대해서 두개의 $y$값을 갖습니다.</p>
+
+<p>그래서 원을 우리는 함수라고 하지 않고 원의 방정식이라고 합니다.</p>
+
+<p>이렇게 하나의 값에 대해서 두개 이상의 값을 갖는 형태를 도형의 방정식이라고 합니다.</p>
+
+<p>이처럼 좌표에 시각적으로 표현할 수 있는 수학적인 영역이 함수와 도형입니다.</p>
+
+<h2 id="-치환의-중요성">| 치환의 중요성</h2>
+<p>수학에 있어서 치환이라는 개념은 수학적인 표현의 간결성을 만들어주는 아주 중요한 부분입니다.</p>
+
+<p>프로그램도 객체라는 개념이 치환이라는 개념과 거의 동일한 의미를 가지고 있습니다.</p>
+
+<p>객체지향프로그램(OOP)을 간단하게 이야기 하자면 프로그램을 작성할 때 반복되는 부분을 하나의 객체화하여 재사용성을 높이는 방법이라고 할 수 있겠습니다.</p>
+
+<p>수학에서 치환이란 객체지향과 비슷한 방법입니다. 반복되어 사용하는 수학적인 형태를 하나의 문자로 변환하여 수식의 차원이나 형태를 변형하여 간단하게 만들 수 있습니다.</p>
+
+<p>$x^4+3x^2-2=0$
+$t=x^2$로 치환하면
+$t^2+3t-2=0$</p>
+
+<p>이렇게 4차원의 방정식을 2차원의 방정식으로 바꿔서 판단을 할 수 있습니다.</p>
+
+<p>연산을 하는데 있어서 반복되는 형태를 묶어주면 손쉬게 연산을 할 수 있습니다.</p>
+
+<p>$(a+b+c)(a+b-c)$ 라는 곱셈공식이 있을 때 $a+b=A$라고 치환을 하면</p>
+
+<p>$(A+c)(A-c)$의 합차공식으로 변형할 수 있습니다.</p>
+
+<p>또한 핵심적으로 사용하는 부분은 치환적분법입니다. 적분의 계산을 하는 공식으로 편미분을 이용하여 치환을 이용하는 방법으로 자세한 부분은 나중에 적분법에서 이야기 하겠습니다.</p>
+
+<p>이러한 치환은 수학적인 해석이나 문제해결의 방법론, 구조적인 부분에서는 중요합니다.</p>
+
+
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2020-08-19">19 Aug 2020</time></span>           
+                
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#mathematics-required-for-the-program">mathematics required for the program</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    
+                    
+                </ul>
+            </div>
+            <!-- End Tags -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="/math-blog-5/"> &laquo; 수학적인 사고의 방법</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="/math-blog-7/">수학을 느낄 수 있는 방법 &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+        <article>
+            <script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+                    </script>
+            <script type="text/javascript" src="http://cdn.mathjax.org/math...">
+            </script>
+        </article>
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'Fulgur'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+</div>
+
+
+<!-- Bottom Alert Bar
+================================================== -->
+<div class="alertbar">
+	<div class="container text-center">
+		<span><img src="/assets/images/logo.png" alt="Fulgur's Blog"> &nbsp;<b>오늘</b>보다 나은  <b>내일</b> 위해 준비합니다. </span>
+<!--        <form action="" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>-->
+<!--            <div class="mc-field-group">-->
+<!--            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>-->
+<!--            <input type="submit" value="Subscribe" name="subscribe" class="heart">-->
+<!--            </div>-->
+<!--        </form>-->
+	</div>
+</div>
+
+    
+</div>
+
+<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            
+            
+                
+                    <a class="mt-1 mb-1" href="/categories#Remind-Math">Remind Math (5)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#mathematics-required-for-the-program">mathematics required for the program (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#the-humanities-of-mathematics">the humanities of mathematics (1)</a>
+                
+            
+            
+		</div>
+	</div>
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © 2020 Fulgur 
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="/assets/js/mediumish.js"></script>
+
+
+
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+
+<script id="dsq-count-scr" src="//Fulgur.disqus.com/count.js"></script>
+
+<!--LaTax script add-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
+</body>
+</html>
